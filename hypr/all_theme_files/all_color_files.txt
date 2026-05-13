@@ -1,4 +1,0 @@
-waybar colors (colors.css) (~/.config/waybar/colors/custom/ folder for custom theme files)
-rofi colors (colors.rasi) (~/.config/rofi/colors folder for custom theme files)
-kitty colors (colors.conf) (~/.config/kitty/colors folder for custom theme files)
-hypr colors (colors.conf) (~/.config/hypr/modules/colors folder for custom theme files)

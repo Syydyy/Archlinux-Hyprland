@@ -1,9 +1,90 @@
 # A Basic Guide to my Hyprland Setup
 
-## 1. My ~/.config/hypr folder:
+*Note: These Dotfiles are not updated to lua version and are in config version*
 
-### A. Hypr folder (main hyprland folder):
+## Some important keybinds:
 
-#### 1. all_theme_files:
+* Open kitty terminal - Super + Return
+* Close a window - Super + Q
+* Open browser (zen) - Super + B
+* Open app launcher (Rofi) - Super + D
+* Open vscode - Super + V
+* Open Clipboard - Super + Shift + V
+* Open Custom theme switcher - Super + T
+* Open Custom wallpaper switcher - Super + W
+* Open waybar switcher - Super + Shift + W
+* Open custom wallpaper transition switcher - Super + Alt + W
+* Open Appearance menu (All switchers are available here) - Super + A
+* Logout and close all apps - Super + CTRL + P
 
-* This folder contains all the theming files related to the setup like hyprland colors, waybar colors, 
+
+You can change these keybindings in ~/.config/hypr/modules/keybinds.conf
+
+## Some basic dependencies: 
+* hyprland
+* kitty
+* waybar
+* waybar-update
+* rofi
+* swaync
+* swayosd
+* hyprlock
+* hypridle
+* swwww
+* zen browser
+* vscode
+
+## 1. Main Files:
+
+### A. If you use vscode:
+
+Then to match custom theme switcher to your vscode, install the following themes in vscode:
+
+
+* Dark Green Jungle Theme
+* Onedark
+* Catppuccin
+* Everforest Pro
+* Gruvbox Theme
+* Monochrome
+* Nord
+* Rose Pine
+
+
+### B. Hypr folder (main hyprland folder):
+
+#### 1. Modules:
+
+All the functionality of hyprland has been split into amny modules placed inside of hypr/module/ folder which are sourced to hyprland.conf file.
+
+
+#### 2. Switchers:
+
+This folder contains the bash script for all the custom switchers like custom theme switcher, custom Wallpaper switcher, custom wallpaper transition switcher, custom waybar switcher
+
+
+#### 3. Wallpapers: 
+
+This folder contains all the wallpapers sorted by catgeory wise which is necessary for the wallpaper switcher to identify when to use which wallpaper set.
+
+
+## 2. All package folders:
+
+This includes all folders like kitty, rofi, swaync, waybar.
+
+Basically these folders contains config and color files of each of the package respectively.
+
+If you want to add your own custom theme or color then do not make any changes inside of these folders, just do changes inside of the theme folder as i have instructed below:
+
+## 3. Theme folder:
+
+All the custom themeing happens here 
+You can add your own theme folder and then copy the format of any other theme inside of the theme folder 
+like having all the directories hypr, waybar, kitty, rofi, hyprlock, and all the files like current-theme.txt and wallpaper.png
+
+basically what you will do is look at my previously made theme color files and you will paste that inside of any LLM and ask it to make a color pallette like what i have made of any theme you would like
+and then paste those files with appropriate file name inside their designated folders 
+
+and vallahh your custom theme is added to custom theme swithcer
+
+
