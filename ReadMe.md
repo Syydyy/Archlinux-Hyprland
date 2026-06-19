@@ -1,6 +1,6 @@
 # A Basic Guide to my Hyprland Setup
 
-*Note: These Dotfiles are not updated to lua version and are in config version*
+*Note: Updated to latest lua version hyprland 0.55*
 
 ## Some important keybinds:
 
