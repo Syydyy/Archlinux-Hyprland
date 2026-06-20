@@ -4,10 +4,10 @@
 
 ## Some important keybinds:
 
-* Open kitty terminal - Super + Return
+* Open kitty terminal - Super + T
 * Close a window - Super + Q
-* Open browser (zen) - Super + B
-* Open app launcher (Rofi) - Super + D
+* Open browser (Firefox) - Super + B
+* Open app launcher (Rofi) - Super + R
 * Open vscode - Super + V
 * Open Clipboard - Super + Shift + V
 * Open Custom theme switcher - Super + T
