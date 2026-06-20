@@ -10,7 +10,7 @@
 * Open app launcher (Rofi) - Super + R
 * Open vscode - Super + V
 * Open Clipboard - Super + Shift + V
-* Open Custom theme switcher - Super + T
+* Open Custom theme switcher - Super + RETURN
 * Open Custom wallpaper switcher - Super + W
 * Open waybar switcher - Super + Shift + W
 * Open custom wallpaper transition switcher - Super + Alt + W
@@ -31,7 +31,7 @@ You can change these keybindings in ~/.config/hypr/modules/keybinds.conf
 * hyprlock
 * hypridle
 * swwww
-* zen browser
+* firefox
 * vscode
 
 ## 1. Main Files:
