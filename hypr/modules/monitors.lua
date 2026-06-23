@@ -2,17 +2,17 @@
 
 -- Default Monitor:
 hl.monitor({
-    output   = "eDP-1",
-    mode     = "1920x1200@144",
+    output   = "DP-3",
+    mode     = "1920x1080@165",
     position = "0x0",
-    scale    = "1.20",
+    scale    = "1",
 })
 
 -- Workspaces 1 to 5 (Persistent)
 for i = 1, 5 do
     hl.workspace_rule({
         workspace  = tostring(i),
-        monitor    = "eDP-1",
+        monitor    = "DP-3",
         persistent = true,
     })
 end
@@ -21,6 +21,6 @@ end
 for i = 6, 10 do
     hl.workspace_rule({
         workspace = tostring(i),
-        monitor   = "eDP-1",
+        monitor   = "DP-3",
     })
 end
