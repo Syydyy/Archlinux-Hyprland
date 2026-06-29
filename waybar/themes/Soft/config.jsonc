@@ -5,11 +5,11 @@
   "margin-top": 8,
   "margin-left": 10,
   "margin-right": 10,
-  "spacing": 0,
+  "spacing": 8,
 
   "modules-left": ["custom/pacman", "clock"],
   "modules-center": ["hyprland/workspaces"],
-  "modules-right": ["bluetooth",  "network", "pulseaudio", "battery"],
+  "modules-right": ["network", "pulseaudio", "memory", "disk", "tray"],
 
   "custom/pacman": {
     "format": "󰮯{}",
@@ -21,7 +21,7 @@
   },
 
   "clock": {
-    "format": "{:%I:%M %p}",
+    "format": "󰥔 {:%H:%M  %d/%m/%Y}",
     "tooltip-format": "<span font='Maple Mono CN'>{calendar}</span>"
   },
 

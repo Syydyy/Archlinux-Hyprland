@@ -5,15 +5,18 @@
   "margin-top": 5,
   "margin-left": 10,
   "margin-right": 10,
-  "spacing": 0,
+  "spacing": 8,
 
   "modules-left": [],
   "modules-center": [],
   "modules-right": [
     "hyprland/workspaces",
     "clock",
-    "bluetooth",
+    "tray",
     "pulseaudio",
+    "disk",
+    "cpu",
+    "memory",
     "network",
     "battery"
   ],
@@ -24,8 +27,8 @@
   },
 
   "clock": {
-    "format": "{:%I:%M %p}",
-    "tooltip-format": "<span font='Maple Mono CN'>{calendar}</span>"
+    "format": "󰥔 {:%H:%M }",
+    "tooltip": false
   },
 
   "bluetooth": {
@@ -45,7 +48,7 @@
 
   "network": {
     "format-wifi": " {essid}",
-    "format-ethernet": "󰊗 {ipaddr}",
+    "format-ethernet": " {ipaddr}",
     "format-disconnected": "󰤮 Disconnected",
     "tooltip-format": "{ifname} via {gwaddr}",
     "on-click": "nmrs"

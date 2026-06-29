@@ -3,18 +3,20 @@
 -- https://wiki.hypr.land/Configuring/Variables/#input
 hl.config({
     input = {
-        kb_layout = "us",
-        kb_variant = "",
-        kb_model = "",
+        kb_layout  = "br",
+        kb_variant = "abnt2",
+        kb_model   = "",
         kb_options = "",
-        kb_rules = "",
+        kb_rules   = "",
 
-        follow_mouse = 1,
-
-        sensitivity = 0, -- -1.0 - 1.0, 0 means no modification.
+        follow_mouse          = 1,
+        off_window_axis_events = 2,
+        accel_profile         = "flat",
+        force_no_accel        = false,
+        sensitivity           = -0.35,
 
         touchpad = {
-            natural_scroll = true,
+            natural_scroll = false,
         }
     }
 })
@@ -30,5 +32,5 @@ hl.gesture({
 -- See https://wiki.hypr.land/Configuring/Keywords/#per-device-input-configs for more
 hl.device({
     name = "epic-mouse-v1",
-    sensitivity = -0.5,
+    sensitivity = -0.5
 })

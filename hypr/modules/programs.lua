@@ -1,5 +1,5 @@
-browser = "zen-browser"
+browser = "firefox"
 terminal = "kitty"      
-fileManager = "nautilus"    
+fileManager = "dolphin"    
 codeEditor = "vscodium"     
 wallpaperEngine = "awww-daemon" 

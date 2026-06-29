@@ -20,8 +20,10 @@ hl.env("XDG_SESSION_DESKTOP", "Hyprland")
 hl.env("QT_AUTO_SCREEN_SCALE_FACTOR", "1")
 hl.env("QT_WAYLAND_DISABLE_WINDOWDECORATION", "1")
 hl.env("QT_QPA_PLATFORMTHEME", "qt6ct")
+hl.env("XDG_MENU_PREFIX", "arch-")
 
--- Nvidia
-hl.env("GBM_BACKEND", "nvidia-drm")
-hl.env("LIBVA_DRIVER_NAME", "nvidia")
-hl.env("__GLX_VENDOR_LIBRARY_NAME", "nvidia")
+-- AMD
+hl.env("LIBVA_DRIVER_NAME",         "radeonsi")
+hl.env("VDPAU_DRIVER",              "radeonsi")
+hl.env("GBM_BACKEND",               "dri")
+hl.env("__GLX_VENDOR_LIBRARY_NAME", "mesa")

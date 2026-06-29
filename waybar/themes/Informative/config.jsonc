@@ -14,13 +14,13 @@
   ],
   "modules-center": ["clock"],
   "modules-right": [
+    "tray",
     "cpu",
     "memory",
     "disk",
     "pulseaudio",
     "network",
-    "battery",
-    "tray"
+    "custom/notification"
   ],
 
   "hyprland/workspaces": {
@@ -53,14 +53,14 @@
   },
 
   "custom/pacman": {
-    "format": "󰮯{}",
+    "format": "󰣇{}",
     "interval": 3600,
     "on-click": "kitty yay -Syu",
     "signal": 8
   },
 
   "clock": {
-    "format": "{:%a, %d %b | %I:%M %p}",
+    "format": "{:%a, %d %b | %H:%M }",
     "tooltip-format": "<span font='Maple Mono CN'>{calendar}</span>"
   },
 
@@ -71,7 +71,7 @@
 
   "network": {
     "format-wifi": " {essid}",
-    "format-ethernet": "󰊗",
+    "format-ethernet": "",
     "format-disconnected": "󰤮",
     "tooltip-format": "{ipaddr}"
   },

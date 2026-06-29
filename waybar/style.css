@@ -77,10 +77,11 @@ tooltip label{
 
 #custom-pacman,
 #clock,
-#bluetooth,
+#cpu,
 #pulseaudio,
 #network,
-#battery {
+#memory,
+#disk {
 
 }
 
@@ -92,7 +93,7 @@ tooltip label{
     color: @blue;
 }
 
-#bluetooth {
+#cpu {
     color: @blue;
 }
 
@@ -104,10 +105,10 @@ tooltip label{
     color: @purple;
 }
 
-#battery {
+#memory {
     color: @green;
 }
 
-#custom-notification {
+#custom-notifications {
     color: @fg;
 }

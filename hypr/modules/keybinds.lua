@@ -6,13 +6,13 @@ require("modules.programs")
 local mainMod = "SUPER"
 
 -- Terminal Related
-hl.bind(mainMod .. " + RETURN", hl.dsp.exec_cmd(terminal))
+--hl.bind(mainMod .. " + RETURN", hl.dsp.exec_cmd(terminal))
 
 -- Kill Active Window
 hl.bind(mainMod .. " + Q", hl.dsp.window.close())
 
 -- App Launcher
-hl.bind(mainMod .. " + D", hl.dsp.exec_cmd("~/.config/rofi/launchers/type-3/launcher.sh || pkill rofi"))
+hl.bind(mainMod .. " + R", hl.dsp.exec_cmd("~/.config/rofi/launchers/type-3/launcher.sh || pkill rofi"))
 
 -- Appearance Menu ( Theme, wallpaper, wallpaper transition, waybars, fonts )
 hl.bind(mainMod .. " + A", hl.dsp.exec_cmd("pkill rofi || ~/.config/hypr/switchers/set-appearance.sh"))
@@ -27,7 +27,13 @@ hl.bind(mainMod .. " + W", hl.dsp.exec_cmd("pkill rofi || ~/.config/hypr/switche
 hl.bind(mainMod .. " + ALT + W", hl.dsp.exec_cmd("pkill rofi || ~/.config/hypr/switchers/set-wallpaper-transition.sh"))
 
 -- Custom Theme Switcher
-hl.bind(mainMod .. " + T", hl.dsp.exec_cmd("pkill rofi || ~/.config/hypr/switchers/set-theme.sh"))
+hl.bind(mainMod .. " + RETURN", hl.dsp.exec_cmd("pkill rofi || ~/.config/hypr/switchers/set-theme.sh"))
+
+-- Reload waybar
+hl.bind(mainMod .. " + M", hl.dsp.exec_cmd('sh -c "pkill waybar; waybar"'))
+
+--Terminal
+hl.bind(mainMod .. " + T", hl.dsp.exec_cmd(terminal))
 
 -- Notification center
 hl.bind(mainMod .. " + N", hl.dsp.exec_cmd("swaync-client -t"))
@@ -52,7 +58,9 @@ hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit")) -- Toggles window layou
 hl.bind(mainMod .. " + F", hl.dsp.window.float({ action = "toggle" }))
 
 -- Hyperlock
-hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("hyprlock"))
+--hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("hyprlock"))
+
+hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("wlogout"))
 
 -- Logout of hyprland while closing all the applications
 hl.bind(mainMod .. " + CTRL + P", hl.dsp.exec_cmd("hyprctl eval 'hl.dispatch(hl.dsp.exit())'"))
@@ -85,9 +93,14 @@ hl.bind(mainMod .. " + M", hl.dsp.window.fullscreen({ mode = 1 }))
 hl.bind(mainMod .. " + SHIFT + F", hl.dsp.window.fullscreen({ mode = 0 }))
 
 -- Screenshot Keybinds
-hl.bind("Print",                           hl.dsp.exec_cmd("hyprshot -m region"))
-hl.bind(mainMod .. " + Print",             hl.dsp.exec_cmd("hyprshot -m window"))
-hl.bind(mainMod .. " + SHIFT + Print",     hl.dsp.exec_cmd("hyprshot -m output -m eDP-1"))
+-- HYPRSHOT + SATTY
+-- Captura região interativa
+hl.bind("Print",       hl.dsp.exec_cmd("hyprshot -m region --raw | satty --filename -"))
+-- Captura janela ativa
+hl.bind("SHIFT + Print", hl.dsp.exec_cmd("hyprshot -m window --raw | satty --filename -"))
+-- Captura tela inteira
+hl.bind("CTRL + Print",  hl.dsp.exec_cmd("hyprshot -m output --raw | satty --filename -"))
+
 
 -- Toggle Waybar ON/OFF
 hl.bind(mainMod .. " + CTRL + B", hl.dsp.exec_cmd("~/.config/waybar/scripts/launch.sh"))

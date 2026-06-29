@@ -10,15 +10,17 @@
   "modules-left": ["custom/pacman", "clock", "tray"],
   "modules-center": ["hyprland/workspaces"],
   "modules-right": [
-    "bluetooth",
+
     "pulseaudio",
+    "disk",
+    "memory",
     "network",
-    "battery",
+    "tray",
     "custom/notification",
   ],
 
   "custom/pacman": {
-    "format": "󰮯{}",
+    "format": "󰣇{}",
     "interval": 60,
     "return-type": "json",
     "on-click": "kitty yay -Syu", // Open terminal to update
@@ -27,7 +29,7 @@
   },
 
   "clock": {
-    "format": "{:%I:%M %p}",
+     "format": "󰥔 {:%H:%M }",
     "format-alt": "{:L%A, %B %d, %Y (%I:%M %p)}",
     "tooltip-format": "<span font='Maple Mono CN'>{calendar}</span>",
   },
