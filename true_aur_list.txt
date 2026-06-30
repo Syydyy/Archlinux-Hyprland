@@ -1,0 +1,14 @@
+bottles
+caffeine-ng
+dipc
+ds4drv
+nmrs
+opencode-bin
+pokeget
+postman-bin
+python-pywalfox
+spotify
+ttf-google-sans
+visual-studio-code-bin
+warp-terminal-bin
+waybar-updates
