@@ -1,0 +1,8 @@
+selected_tab: thermals_page
+selected_gpu: 1002:7550-1849:5401-0000:03:00.0
+stats_poll_interval_ms: 500
+gpus: {}
+theme: automatic
+window_size:
+  width: 1011
+  height: 1024
